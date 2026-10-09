@@ -1,0 +1,57 @@
+{
+    "name": "liufencn/transliterator",
+    "description": "Transliterate non-ASCII characters in discussion URL (Flarum 2.x community fork of fof/transliterator)",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "transliterator",
+        "slug",
+        "url"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/LiuFenCN/transliterator/issues",
+        "source": "https://github.com/LiuFenCN/transliterator",
+        "forum": "https://discuss.flarum.org/d/18074"
+    },
+    "homepage": "https://github.com/LiuFenCN/transliterator",
+    "require": {
+        "flarum/core": "^2.0",
+        "behat/transliterator": "^1.3",
+        "php": ">=8.1"
+    },
+    "suggest": {
+        "ext-intl": "Needed for the 'PHP' and 'PHP #2' transliterators"
+    },
+    "authors": [
+        {
+            "name": "David Sevilla Martín",
+            "email": "david.s@redevs.org",
+            "role": "Original Developer"
+        },
+        {
+            "name": "LiuFenCN",
+            "role": "Flarum 2.x maintenance (community fork)"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FoF\\Transliterator\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-flarum-2.x": "1.0.x-dev"
+        },
+        "flarum-extension": {
+            "title": "URL Transliterator (Flarum 2.x fork)",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-link",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        }
+    }
+}
